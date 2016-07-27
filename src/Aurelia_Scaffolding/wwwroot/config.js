@@ -11,9 +11,13 @@ System.config({
     "aurelia-bootstrapper": "npm:aurelia-bootstrapper@1.0.0",
     "aurelia-fetch-client": "npm:aurelia-fetch-client@1.0.0",
     "aurelia-framework": "npm:aurelia-framework@1.0.0",
+    "bootstrap": "github:twbs/bootstrap@3.3.7",
     "typescript": "npm:typescript@1.8.10",
     "github:jspm/nodelibs-os@0.1.0": {
       "os-browserify": "npm:os-browserify@0.1.2"
+    },
+    "github:twbs/bootstrap@3.3.7": {
+      "jquery": "npm:jquery@2.2.4"
     },
     "npm:aurelia-binding@1.0.0": {
       "aurelia-logging": "npm:aurelia-logging@1.0.0",

@@ -5,6 +5,7 @@
     "target": "es6",
     "module": "system"
   },
+  "compileOnSave": true,
   "exclude": [
     "wwwroot/jspm_packages",
     "node_modules"

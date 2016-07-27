@@ -1,0 +1,55 @@
+﻿﻿Global dependencies: jspm, npm, git, github, typings
+
+1. create .NET Core ASP 5 app in VS 2015
+2. jspm init (default steps, except: set baseURL = wwwroot)
+3. jspm install aurelia-framework aurelia-bootstrapper aurelia-fetch-client bootstrap
+4. add tconfig.json:
+
+{
+  "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es6",
+    "module": "system"
+  },
+  "compileOnSave": true,
+  "exclude": [
+    "wwwroot/jspm_packages",
+    "node_modules"
+  ]
+}
+
+5. create typings.json in project root
+6. copy typings.json file from Aurelia_Scaffolding project
+7. open project folder in command line, type: typings install
+8. install NuGet package: StaticFiles
+9. update Startup.cs, add the following lines to "Configure" method:
+
+	app.UseDefaultFiles();
+    app.UseStaticFiles();
+
+10. add file: wwwroot/Index.html (get contents from Aurelia_Scaffolding project)
+11. Important part of Index.html is below (note the aurelia-app="main" attribute):
+
+<div aurelia-app="main">
+    <script src="jspm_packages/system.js"></script>
+    <script src="config.js"></script>
+    <script>
+		SystemJS.import('aurelia-bootstrapper');
+    </script>
+</div>
+
+12. add file: wwwroot/main.ts:
+
+"use strict";
+export function configure(aurelia) {
+    aurelia.use.standardConfiguration().developmentLogging();
+    aurelia.start().then(a => a.setRoot("src/app"));
+}
+
+13. add folder: wwwroot/src
+14. add files: wwwroot/src/app.ts / wwwroot/src/app.html
+15. add folder: wwwroot/src/styles
+16. add file: wwwroot/src/styles/aurelia-default.css (get source from Aurelia_Scaffolding project)
+17. add reference to aurelia-default.css in Index.html
+18. create aurelia application using app.ts / app.html as your root

@@ -126,5 +126,9 @@
     "aurelia-metadata": "npm:aurelia-metadata@^1.0.0",
     "aurelia-pal": "npm:aurelia-pal@^1.0.0",
     "aurelia-task-queue": "npm:aurelia-task-queue@^1.0.0"
+  },
+  "npm:jquery@2.2.4": {},
+  "github:twbs/bootstrap@3.3.7": {
+    "jquery": "jspm:jquery@2"
   }
 }
