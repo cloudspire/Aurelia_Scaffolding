@@ -2,7 +2,7 @@
 
 1. create .NET Core ASP 5 app in VS 2015
 2. jspm init (default steps, except: set baseURL = wwwroot)
-3. jspm install aurelia-framework aurelia-bootstrapper aurelia-fetch-client bootstrap
+3. jspm install aurelia-framework aurelia-bootstrapper aurelia-fetch-client bootstrap jquery
 4. add tconfig.json:
 
 {

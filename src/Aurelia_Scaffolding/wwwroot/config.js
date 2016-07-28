@@ -8,6 +8,8 @@ System.config({
   },
   bundles: {
     "src/vendor-build.js": [
+      "github:jspm/nodelibs-process@0.1.2.js",
+      "github:jspm/nodelibs-process@0.1.2/index.js",
       "npm:aurelia-binding@1.0.0.js",
       "npm:aurelia-binding@1.0.0/aurelia-binding.js",
       "npm:aurelia-bootstrapper@1.0.0.js",
@@ -87,22 +89,47 @@ System.config({
       "npm:aurelia-templating-router@1.0.0/route-loader.js",
       "npm:aurelia-templating-router@1.0.0/router-view.js",
       "npm:aurelia-templating@1.0.0.js",
-      "npm:aurelia-templating@1.0.0/aurelia-templating.js"
+      "npm:aurelia-templating@1.0.0/aurelia-templating.js",
+      "npm:jquery@3.1.0.js",
+      "npm:jquery@3.1.0/dist/jquery.js",
+      "npm:process@0.11.6.js",
+      "npm:process@0.11.6/browser.js"
     ]
   },
-
   map: {
     "aurelia-bootstrapper": "npm:aurelia-bootstrapper@1.0.0",
     "aurelia-fetch-client": "npm:aurelia-fetch-client@1.0.0",
     "aurelia-framework": "npm:aurelia-framework@1.0.0",
     "bootstrap": "github:twbs/bootstrap@3.3.7",
+    "jquery": "npm:jquery@3.1.0",
     "text": "github:systemjs/plugin-text@0.0.8",
     "typescript": "npm:typescript@1.8.10",
+    "github:jspm/nodelibs-assert@0.1.0": {
+      "assert": "npm:assert@1.4.1"
+    },
+    "github:jspm/nodelibs-buffer@0.1.0": {
+      "buffer": "npm:buffer@3.6.0"
+    },
     "github:jspm/nodelibs-os@0.1.0": {
       "os-browserify": "npm:os-browserify@0.1.2"
     },
+    "github:jspm/nodelibs-process@0.1.2": {
+      "process": "npm:process@0.11.6"
+    },
+    "github:jspm/nodelibs-util@0.1.0": {
+      "util": "npm:util@0.10.3"
+    },
+    "github:jspm/nodelibs-vm@0.1.0": {
+      "vm-browserify": "npm:vm-browserify@0.0.4"
+    },
     "github:twbs/bootstrap@3.3.7": {
       "jquery": "npm:jquery@2.2.4"
+    },
+    "npm:assert@1.4.1": {
+      "assert": "github:jspm/nodelibs-assert@0.1.0",
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "util": "npm:util@0.10.3"
     },
     "npm:aurelia-binding@1.0.0": {
       "aurelia-logging": "npm:aurelia-logging@1.0.0",
@@ -218,11 +245,37 @@ System.config({
       "aurelia-path": "npm:aurelia-path@1.0.0",
       "aurelia-task-queue": "npm:aurelia-task-queue@1.0.0"
     },
+    "npm:buffer@3.6.0": {
+      "base64-js": "npm:base64-js@0.0.8",
+      "child_process": "github:jspm/nodelibs-child_process@0.1.0",
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "ieee754": "npm:ieee754@1.1.6",
+      "isarray": "npm:isarray@1.0.0",
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:inherits@2.0.1": {
+      "util": "github:jspm/nodelibs-util@0.1.0"
+    },
+    "npm:jquery@3.1.0": {
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
     "npm:os-browserify@0.1.2": {
       "os": "github:jspm/nodelibs-os@0.1.0"
     },
+    "npm:process@0.11.6": {
+      "assert": "github:jspm/nodelibs-assert@0.1.0",
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "vm": "github:jspm/nodelibs-vm@0.1.0"
+    },
     "npm:typescript@1.8.10": {
       "os": "github:jspm/nodelibs-os@0.1.0"
+    },
+    "npm:util@0.10.3": {
+      "inherits": "npm:inherits@2.0.1",
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:vm-browserify@0.0.4": {
+      "indexof": "npm:indexof@0.0.1"
     }
   }
 });

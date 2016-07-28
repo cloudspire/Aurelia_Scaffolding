@@ -19,7 +19,8 @@ var vendor_config = {
                 'aurelia-templating-router',
                 'aurelia-history-browser',
                 'aurelia-logging-console',
-                'aurelia-event-aggregator'
+                'aurelia-event-aggregator',
+                'jquery'
             ],
             options: {
                 inject: true,

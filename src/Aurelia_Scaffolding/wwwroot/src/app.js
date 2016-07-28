@@ -1,4 +1,4 @@
-System.register(["aurelia-framework", "aurelia-router", 'bootstrap'], function(exports_1, context_1) {
+System.register(["aurelia-framework", "aurelia-router", "./models/utilities", 'bootstrap'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(["aurelia-framework", "aurelia-router", 'bootstrap'], function(e
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var aurelia_framework_1, aurelia_router_1;
+    var aurelia_framework_1, aurelia_router_1, utilities_1;
     var App;
     return {
         setters:[
@@ -20,12 +20,27 @@ System.register(["aurelia-framework", "aurelia-router", 'bootstrap'], function(e
             function (aurelia_router_1_1) {
                 aurelia_router_1 = aurelia_router_1_1;
             },
+            function (utilities_1_1) {
+                utilities_1 = utilities_1_1;
+            },
             function (_1) {}],
         execute: function() {
             let App = class App {
-                constructor(router) {
+                constructor(router, utils) {
                     this.router = router;
+                    this.utils = utils;
+                    this.loadExceptionHandler();
                     this.appLoaded();
+                }
+                loadExceptionHandler() {
+                    this.utils.addEventListener('exception', 'app.ts', (data) => {
+                        if (data.alert != null) {
+                            this.utils.showModal(data.alert);
+                        }
+                        if (data.log) {
+                            console.error(data);
+                        }
+                    });
                 }
                 appLoaded() {
                     this.router.configure((config) => {
@@ -38,8 +53,8 @@ System.register(["aurelia-framework", "aurelia-router", 'bootstrap'], function(e
                 }
             };
             App = __decorate([
-                aurelia_framework_1.inject(aurelia_router_1.Router), 
-                __metadata('design:paramtypes', [aurelia_router_1.Router])
+                aurelia_framework_1.inject(aurelia_router_1.Router, utilities_1.Utilities), 
+                __metadata('design:paramtypes', [aurelia_router_1.Router, utilities_1.Utilities])
             ], App);
             exports_1("App", App);
         }

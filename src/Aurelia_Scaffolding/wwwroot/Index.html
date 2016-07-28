@@ -6,23 +6,24 @@
     <link rel="stylesheet" href="src/styles/aurelia-default.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="src/styles/btsp-cyborg.css" />
+    <link rel="stylesheet" href="src/styles/bootstrap-addon.css" />
+    <style>
+        body {
+            background-image: url(./images/pattern_40.gif);
+        }
+    </style>
 </head>
 <body>
     <div aurelia-app="main">
+        <div class="splash">
+            <div class="message">Aurelia Scaffolding</div>
+            <i class="fa fa-spinner fa-spin fa-3x"></i>
+        </div>
         <script src="jspm_packages/system.js"></script>
         <script src="config.js"></script>
         <script>
-                //var systemLocate = System.locate;
-                //System.locate = function (load) {
-                //    var System = this;
-                //    return Promise.resolve(systemLocate.call(this, load)).then(function (address) {
-                //        if (address.lastIndexOf("html.js") > -1) return address;
-                //        if (address.lastIndexOf("css.js") > -1) return address;
-                //        return address;
-                //    });
-                //};
-                //System.cacheBust = '?bust=' + Date.now();
-                SystemJS.import('aurelia-bootstrapper');
+            SystemJS.import('aurelia-bootstrapper');
         </script>
     </div>
 </body>

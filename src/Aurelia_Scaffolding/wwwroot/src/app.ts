@@ -1,12 +1,26 @@
 ﻿import {inject} from "aurelia-framework";
 import {Router, RouterConfiguration} from "aurelia-router";
+import {Utilities} from "./models/utilities";
 import 'bootstrap';
+import $ from 'jquery';
 
-@inject(Router)
+@inject(Router, Utilities)
 export class App {
 
-    constructor(private router: Router) {
+    constructor(private router: Router, private utils: Utilities) {
+        this.loadExceptionHandler();
         this.appLoaded();
+    }
+
+    private loadExceptionHandler() {
+        this.utils.addEventListener('exception', 'app.ts', (data: any) => {
+            if (data.alert != null) {
+                this.utils.showModal(data.alert);
+            }
+            if (data.log) {
+                console.error(data);
+            }
+        });
     }
 
     private appLoaded() {
