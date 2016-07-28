@@ -130,5 +130,6 @@
   "npm:jquery@2.2.4": {},
   "github:twbs/bootstrap@3.3.7": {
     "jquery": "jspm:jquery@2"
-  }
+  },
+  "github:systemjs/plugin-text@0.0.8": {}
 }

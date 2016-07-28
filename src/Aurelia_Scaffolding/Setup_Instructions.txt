@@ -52,4 +52,13 @@ export function configure(aurelia) {
 15. add folder: wwwroot/src/styles
 16. add file: wwwroot/src/styles/aurelia-default.css (get source from Aurelia_Scaffolding project)
 17. add reference to aurelia-default.css in Index.html
-18. create aurelia application using app.ts / app.html as your root
+18. open project folder in command line, type: npm install aurelia-bundler --save-dev
+19. open project folder in command line, type: npm install gulp --save
+20. open project folder in command line, type: npm install require-dir --save
+21. add folder: build
+22. add folder: build/tasks
+23. add file: build/tasks/bundle.js
+24. copy contents of bundle.js from Aurelia_Scaffolding app
+25. add file: gulpfile.js: require('require-dir')('build/tasks');
+26. open Task Runner Explorer, refresh tasks, and run 'bundle-vendor'
+27. create aurelia application using app.ts / app.html as your root

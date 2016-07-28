@@ -7,10 +7,18 @@
       "aurelia-bootstrapper": "npm:aurelia-bootstrapper@^1.0.0",
       "aurelia-fetch-client": "npm:aurelia-fetch-client@^1.0.0",
       "aurelia-framework": "npm:aurelia-framework@^1.0.0",
-      "bootstrap": "github:twbs/bootstrap@^3.3.7"
+      "bootstrap": "github:twbs/bootstrap@^3.3.7",
+      "text": "github:systemjs/plugin-text@^0.0.8"
     },
     "devDependencies": {
       "typescript": "npm:typescript@^1.6.2"
     }
+  },
+  "devDependencies": {
+    "aurelia-bundler": "^0.4.0"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "require-dir": "^0.3.0"
   }
 }
