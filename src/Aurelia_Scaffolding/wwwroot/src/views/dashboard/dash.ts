@@ -4,8 +4,10 @@ import {Utilities} from 'src/models/utilities';
 @inject(Utilities)
 export class Dash {
 
+    test_state: string;
+
     constructor(private utils: Utilities) {
-        var x = 1;
+        this.test_state = '';
     }
 
     test_modal() {

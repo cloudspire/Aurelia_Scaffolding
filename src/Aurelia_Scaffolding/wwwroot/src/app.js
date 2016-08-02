@@ -1,4 +1,4 @@
-System.register(["aurelia-framework", "aurelia-router", "./models/utilities", 'bootstrap'], function(exports_1, context_1) {
+System.register(["aurelia-framework", "aurelia-router", "./models/utilities", "./models/session", 'bootstrap'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(["aurelia-framework", "aurelia-router", "./models/utilities", 'b
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var aurelia_framework_1, aurelia_router_1, utilities_1;
+    var aurelia_framework_1, aurelia_router_1, utilities_1, session_1;
     var App;
     return {
         setters:[
@@ -23,12 +23,17 @@ System.register(["aurelia-framework", "aurelia-router", "./models/utilities", 'b
             function (utilities_1_1) {
                 utilities_1 = utilities_1_1;
             },
+            function (session_1_1) {
+                session_1 = session_1_1;
+            },
             function (_1) {}],
         execute: function() {
             let App = class App {
-                constructor(router, utils) {
+                constructor(router, utils, session) {
                     this.router = router;
                     this.utils = utils;
+                    this.session = session;
+                    this.loadRouter();
                     this.loadExceptionHandler();
                     this.appLoaded();
                 }
@@ -42,7 +47,7 @@ System.register(["aurelia-framework", "aurelia-router", "./models/utilities", 'b
                         }
                     });
                 }
-                appLoaded() {
+                loadRouter() {
                     this.router.configure((config) => {
                         config.title = "Aurelia";
                         config.map([
@@ -51,10 +56,12 @@ System.register(["aurelia-framework", "aurelia-router", "./models/utilities", 'b
                         return config;
                     });
                 }
+                appLoaded() {
+                }
             };
             App = __decorate([
-                aurelia_framework_1.inject(aurelia_router_1.Router, utilities_1.Utilities), 
-                __metadata('design:paramtypes', [aurelia_router_1.Router, utilities_1.Utilities])
+                aurelia_framework_1.inject(aurelia_router_1.Router, utilities_1.Utilities, session_1.SessionData), 
+                __metadata('design:paramtypes', [aurelia_router_1.Router, utilities_1.Utilities, session_1.SessionData])
             ], App);
             exports_1("App", App);
         }

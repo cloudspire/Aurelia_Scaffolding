@@ -7,8 +7,8 @@
 -debug:full
 -nostdlib
 -nologo
-"c:\users\kbrown_asus\documents\visual studio 2015\Projects\Aurelia_Scaffolding\src\Aurelia_Scaffolding\obj\Debug\netcoreapp1.0\dotnet-compile.assemblyinfo.cs"
--out:"c:\users\kbrown_asus\documents\visual studio 2015\Projects\Aurelia_Scaffolding\src\Aurelia_Scaffolding\bin\Debug\netcoreapp1.0\Aurelia_Scaffolding.dll"
+"C:\Users\kbrown_asus\Documents\Visual Studio 2015\Projects\Aurelia_Scaffolding\src\Aurelia_Scaffolding\obj\Debug\netcoreapp1.0\dotnet-compile.assemblyinfo.cs"
+-out:"C:\Users\kbrown_asus\Documents\Visual Studio 2015\Projects\Aurelia_Scaffolding\src\Aurelia_Scaffolding\bin\Debug\netcoreapp1.0\Aurelia_Scaffolding.dll"
 -r:"C:\Users\kbrown_asus\.nuget\packages\Microsoft.AspNetCore.Antiforgery\1.0.0\lib\netstandard1.3\Microsoft.AspNetCore.Antiforgery.dll"
 -r:"C:\Users\kbrown_asus\.nuget\packages\Microsoft.AspNetCore.Authorization\1.0.0\lib\netstandard1.3\Microsoft.AspNetCore.Authorization.dll"
 -r:"C:\Users\kbrown_asus\.nuget\packages\Microsoft.AspNetCore.Cors\1.0.0\lib\netstandard1.3\Microsoft.AspNetCore.Cors.dll"
@@ -165,7 +165,7 @@
 -r:"C:\Users\kbrown_asus\.nuget\packages\System.Threading.Timer\4.0.1\ref\netstandard1.2\System.Threading.Timer.dll"
 -r:"C:\Users\kbrown_asus\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll"
 -r:"C:\Users\kbrown_asus\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll"
--resource:"c:\users\kbrown_asus\documents\visual studio 2015\Projects\Aurelia_Scaffolding\src\Aurelia_Scaffolding\obj\Debug\netcoreapp1.0\Aurelia_Scaffoldingdotnet-compile.deps.json",Aurelia_Scaffolding.deps.json
-"c:\users\kbrown_asus\documents\visual studio 2015\Projects\Aurelia_Scaffolding\src\Aurelia_Scaffolding\Program.cs"
-"c:\users\kbrown_asus\documents\visual studio 2015\Projects\Aurelia_Scaffolding\src\Aurelia_Scaffolding\Startup.cs"
-"c:\users\kbrown_asus\documents\visual studio 2015\Projects\Aurelia_Scaffolding\src\Aurelia_Scaffolding\Controllers\ValuesController.cs"
+-resource:"C:\Users\kbrown_asus\Documents\Visual Studio 2015\Projects\Aurelia_Scaffolding\src\Aurelia_Scaffolding\obj\Debug\netcoreapp1.0\Aurelia_Scaffoldingdotnet-compile.deps.json",Aurelia_Scaffolding.deps.json
+"C:\Users\kbrown_asus\Documents\Visual Studio 2015\Projects\Aurelia_Scaffolding\src\Aurelia_Scaffolding\Program.cs"
+"C:\Users\kbrown_asus\Documents\Visual Studio 2015\Projects\Aurelia_Scaffolding\src\Aurelia_Scaffolding\Startup.cs"
+"C:\Users\kbrown_asus\Documents\Visual Studio 2015\Projects\Aurelia_Scaffolding\src\Aurelia_Scaffolding\Controllers\ValuesController.cs"

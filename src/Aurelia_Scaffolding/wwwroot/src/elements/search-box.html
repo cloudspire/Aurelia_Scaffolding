@@ -1,0 +1,27 @@
+﻿<template>
+    <style>
+        .predict_list {
+            list-style-type: none;
+            padding-left: 0;
+            padding-right: 0;
+            border: 1px solid white;
+            position: absolute;
+            background-color: black;
+            color: white;
+            z-index: 99;
+        }
+        .predict_list > li {
+            height: 25px;
+            padding: 2px;
+            cursor: default;
+        }
+        .predict_list > li:hover {
+            background-color: white;
+            color: black;
+        }
+    </style>
+    <input css.bind="input_style" oninput.bind="input_changed" type="text" value.bind="val" />
+    <ul class="predict_list" css.bind="list_style">
+        <li repeat.for="item of list_items" onclick.bind="select_item">${item}</li>
+    </ul>
+</template>

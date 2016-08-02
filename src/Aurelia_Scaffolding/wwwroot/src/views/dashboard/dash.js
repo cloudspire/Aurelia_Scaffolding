@@ -24,7 +24,7 @@ System.register(['aurelia-framework', 'src/models/utilities'], function(exports_
             let Dash = class Dash {
                 constructor(utils) {
                     this.utils = utils;
-                    var x = 1;
+                    this.test_state = '';
                 }
                 test_modal() {
                     this.utils.showModal({

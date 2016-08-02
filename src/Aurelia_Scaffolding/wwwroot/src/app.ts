@@ -1,13 +1,15 @@
 ﻿import {inject} from "aurelia-framework";
 import {Router, RouterConfiguration} from "aurelia-router";
 import {Utilities} from "./models/utilities";
+import {SessionData} from "./models/session";
 import 'bootstrap';
 import $ from 'jquery';
 
-@inject(Router, Utilities)
+@inject(Router, Utilities, SessionData)
 export class App {
 
-    constructor(private router: Router, private utils: Utilities) {
+    constructor(private router: Router, private utils: Utilities, private session: SessionData) {
+        this.loadRouter();
         this.loadExceptionHandler();
         this.appLoaded();
     }
@@ -23,7 +25,7 @@ export class App {
         });
     }
 
-    private appLoaded() {
+    private loadRouter() {
         this.router.configure((config: RouterConfiguration): RouterConfiguration => {
             config.title = "Aurelia";
             config.map([
@@ -32,5 +34,9 @@ export class App {
             ]);
             return config;
         });
+    }
+
+    private appLoaded() {
+        
     }
 }

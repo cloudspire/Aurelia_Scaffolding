@@ -1,5 +1,5 @@
---temp-output:c:\users\kbrown_asus\documents\visual studio 2015\Projects\Aurelia_Scaffolding\src\Aurelia_Scaffolding\obj\Debug\netcoreapp1.0\
---out:c:\users\kbrown_asus\documents\visual studio 2015\Projects\Aurelia_Scaffolding\src\Aurelia_Scaffolding\bin\Debug\netcoreapp1.0\Aurelia_Scaffolding.dll
+--temp-output:C:\Users\kbrown_asus\Documents\Visual Studio 2015\Projects\Aurelia_Scaffolding\src\Aurelia_Scaffolding\obj\Debug\netcoreapp1.0\
+--out:C:\Users\kbrown_asus\Documents\Visual Studio 2015\Projects\Aurelia_Scaffolding\src\Aurelia_Scaffolding\bin\Debug\netcoreapp1.0\Aurelia_Scaffolding.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -169,7 +169,7 @@
 --reference:C:\Users\kbrown_asus\.nuget\packages\System.Threading.Timer\4.0.1\ref\netstandard1.2\System.Threading.Timer.dll
 --reference:C:\Users\kbrown_asus\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\kbrown_asus\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
---resource:"c:\users\kbrown_asus\documents\visual studio 2015\Projects\Aurelia_Scaffolding\src\Aurelia_Scaffolding\obj\Debug\netcoreapp1.0\Aurelia_Scaffoldingdotnet-compile.deps.json",Aurelia_Scaffolding.deps.json
-c:\users\kbrown_asus\documents\visual studio 2015\Projects\Aurelia_Scaffolding\src\Aurelia_Scaffolding\Program.cs
-c:\users\kbrown_asus\documents\visual studio 2015\Projects\Aurelia_Scaffolding\src\Aurelia_Scaffolding\Startup.cs
-c:\users\kbrown_asus\documents\visual studio 2015\Projects\Aurelia_Scaffolding\src\Aurelia_Scaffolding\Controllers\ValuesController.cs
+--resource:"C:\Users\kbrown_asus\Documents\Visual Studio 2015\Projects\Aurelia_Scaffolding\src\Aurelia_Scaffolding\obj\Debug\netcoreapp1.0\Aurelia_Scaffoldingdotnet-compile.deps.json",Aurelia_Scaffolding.deps.json
+C:\Users\kbrown_asus\Documents\Visual Studio 2015\Projects\Aurelia_Scaffolding\src\Aurelia_Scaffolding\Program.cs
+C:\Users\kbrown_asus\Documents\Visual Studio 2015\Projects\Aurelia_Scaffolding\src\Aurelia_Scaffolding\Startup.cs
+C:\Users\kbrown_asus\Documents\Visual Studio 2015\Projects\Aurelia_Scaffolding\src\Aurelia_Scaffolding\Controllers\ValuesController.cs
